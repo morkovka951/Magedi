@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magedi</string>
+    <string name="welcome">
+        Welcome to the calendar.\n
+        Make your life easy
+    </string>
+</resources>
