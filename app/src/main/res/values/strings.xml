@@ -4,4 +4,10 @@
         Welcome to the calendar.\n
         Make your life easy
     </string>
+    <string name="text_activ2">
+        Enter your country\n
+        and phone number.\n
+        You will receive a password\n
+        ia an SMS message
+    </string>
 </resources>
