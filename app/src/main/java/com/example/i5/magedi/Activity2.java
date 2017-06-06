@@ -37,15 +37,17 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
 
         numb = String.valueOf(editText2.getText());
 
-
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnActiv2:
-                Intent intent = new Intent();
+                Intent intent = new Intent( this, Activity4.class);
+                //Intent intent = new Intent( this, Activity3.class);
+                //intent.putExtra("phone", editText2.getText().toString());
+                startActivity(intent);
+
         }
     }
 }
