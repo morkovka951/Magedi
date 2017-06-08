@@ -13,7 +13,7 @@ package com.example.i5.magedi;
 
 public class Activity2 extends AppCompatActivity implements View.OnClickListener {
 
-    Spinner spinner;
+    CountryCodePicker ccp;
     EditText editText2;
     Button btnActiv2;
 
@@ -26,16 +26,10 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_2);
 
 
-        spinner = (Spinner) findViewById(R.id.spinner);
+        ccp = (CountryCodePicker) findViewById(R.id.ccp);
         editText2 = (EditText) findViewById(R.id.editText2);
         btnActiv2 = (Button) findViewById(R.id.btnActiv2);
         btnActiv2.setOnClickListener(this);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.planets_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
-        numb = String.valueOf(editText2.getText());
 
 
 
@@ -45,7 +39,8 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnActiv2:
-                Intent intent = new Intent();
+                Intent intent = new Intent(this, Activity4.class);
+                startActivity(intent);
         }
     }
 }
